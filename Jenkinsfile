@@ -1,8 +1,5 @@
 pipeline {
   agent any
-  tools {
-    nodejs 'jenkins-node'
-  }
   stages {
     stage('prepare') {
       steps {
@@ -19,5 +16,8 @@ pipeline {
       }
     }
 
+  }
+  tools {
+    nodejs 'jenkins-node'
   }
 }
