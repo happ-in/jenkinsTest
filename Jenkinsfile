@@ -9,9 +9,11 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'cd test'
-        sh '''npm install
-npm run build'''
+        sh '''cd test
+npm install
+npm run serve
+npm run build
+'''
       }
     }
 
