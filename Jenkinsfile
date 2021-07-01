@@ -9,12 +9,11 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'ls -a'
-        sh 'cd test/'
-        sh 'ls -a'
-        sh 'npm run build'
-        sh 'npm install'
-        sh 'npm run serve'
+        dir('test') {  
+          sh 'npm run build'
+          sh 'npm install'
+          sh 'npm run serve'
+        }
       }
     }
 
