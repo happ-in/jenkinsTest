@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'npm install'
+        sh 'cd jenkinsTest'
       }
     }
 
