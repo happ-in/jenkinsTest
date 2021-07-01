@@ -12,7 +12,7 @@ pipeline {
         dir(path: 'test') {
           sh 'npm run build'
           sh 'npm install'
-          sh 'npm run serve'
+          sh 'npm run build'
         }
 
       }
