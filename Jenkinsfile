@@ -11,7 +11,6 @@ pipeline {
       steps {
         dir(path: 'test') {
           sh 'npm install'
-          sh 'npm run serve'
           sh 'npm run build'
         }
 
