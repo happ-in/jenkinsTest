@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh '''sh \'cd jenkinsTest\'
+        sh '''sh \'cd /var/jenkins_home/workspace/jenkinsTest_main\'
 sh \'npm install && npm run build\''''
       }
     }
