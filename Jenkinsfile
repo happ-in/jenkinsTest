@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('prepare') {
       steps {
-        sh 'cd usr/share/nginx/html'
+        git(poll: true, url: 'https://github.com/happ-in/jenkinsTest.git', branch: 'main')
       }
     }
 
